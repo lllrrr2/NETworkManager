@@ -4073,20 +4073,30 @@ Se selezioni 'Annulla', il file del profilo non verrà crittografato.</value>
   <data name="RestoreDefaultLocationQuestion" xml:space="preserve">
     <value>Vuoi ripristinare il percorso predefinito?</value>
   </data>
-  <data name="RestoreDefaultLocationSettingsMessage" xml:space="preserve">
-    <value>Verrà ripristinato il percorso predefinito e successivamente l'applicazione verrà riavviata.
+  <data name="RestoreDefaultSettingsLocationMessage" xml:space="preserve">
+    <value>Il percorso predefinito delle impostazioni verrà ripristinato e successivamente l'applicazione viene riavviata.
 
-Per migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" in "{1}".  Per evitare che le impostazioni vengano sovrascritte conviene prima chiudere l'applicazione.</value>
+Per migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" a "{1}". A questo scopo è necessario prima chiudere l'applicazione per evitare che le impostazioni vengano sovrascritte.</value>
   </data>
   <data name="ChangeLocationQuestion" xml:space="preserve">
     <value>Vuoi modificare il percorso?</value>
   </data>
-  <data name="ChangeLocationSettingsMessage" xml:space="preserve">
-    <value>Il percorso verrà modificato e successivamente l'applicazione verrà  riavviata.
+  <data name="ChangeSettingsLocationMessage" xml:space="preserve">
+    <value>Il percorso delle impostazioni verrà modificato e successivamente l'applicazione verrà riavviata.
 
-Per migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" a "{1}". Per evitare che le impostazioni vengano sovrascritte conviene prima chiudere l'applicazione.</value>
+Per migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" a "{1}". A questo scopo è necessario prima chiudere l'applicazione per evitare che le impostazioni vengano sovrascritte.</value>
   </data>
   <data name="EnterValidFolderPath" xml:space="preserve">
     <value>Inserisci un percorso valido!</value>
+  </data>
+  <data name="ChangeProfilesLocationMessage" xml:space="preserve">
+    <value>Il percorso dei profili verrà modificato e successivamente l'applicazione verrà riavviata.
+
+Per migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" a "{1}". A questo scopo è necessario prima chiudere l'applicazione per evitare che le impostazioni vengano sovrascritte.</value>
+  </data>
+  <data name="RestoreDefaultProfilesLocationMessage" xml:space="preserve">
+    <value>Il percorso predefinito dei profili verrà ripristinato e successivamente l'applicazione verrrà riavviata.
+
+er migrare le impostazioni precedenti, se necessario, è possibile copiare il file "settings.json" da "{0}" a "{1}". A questo scopo è necessario prima chiudere l'applicazione per evitare che le impostazioni vengano sovrascritte.</value>
   </data>
 </root>
