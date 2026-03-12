@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+description: "Configure system-wide policies for NETworkManager in enterprise environments. Enforce settings for all users via Group Policy, Intune, or SCCM."
+keywords: [NETworkManager, system-wide policies, enterprise deployment, Group Policy, Intune, SCCM, centralized configuration, IT administration]
 ---
 
 # System-Wide Policies
@@ -36,8 +38,9 @@ The `config.json` file uses a simple JSON structure to define policy values. An 
 
 ```json
 {
+  "Profiles_FolderLocation": "\\\\Server\\Shared\\NETworkManager\\Profiles",
+  "Settings_FolderLocation": "%UserProfile%\\NETworkManager\\Settings",
   "Update_CheckForUpdatesAtStartup": false,
-  "SettingsFolderLocation": "C:\\CustomPath\\NETworkManager\\Settings"
 }
 ```
 

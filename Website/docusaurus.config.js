@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "NETworkManager",
   tagline:
-    "A powerful tool for managing networks and troubleshoot network problems!",
+    "A powerful open-source tool for managing networks and troubleshooting network problems!",
   favicon: "img/favicon.ico",
 
   url: "https://borntoberoot.net",
@@ -24,12 +24,50 @@ const config = {
 
   onBrokenLinks: "throw",
   onBrokenAnchors: "throw",
-  onBrokenMarkdownLinks: "throw",
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
 
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: "NETworkManager",
+        applicationCategory: "NetworkApplication",
+        operatingSystem: "Windows 10, Windows 11, Windows Server",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        description:
+          "A powerful open-source tool for managing networks and troubleshooting network problems. Features IP Scanner, Port Scanner, Ping Monitor, Traceroute, DNS Lookup, Remote Desktop, PowerShell, PuTTY (SSH), and more.",
+        url: "https://borntoberoot.net/NETworkManager",
+        downloadUrl:
+          "https://borntoberoot.net/NETworkManager/download",
+        author: {
+          "@type": "Person",
+          name: "BornToBeRoot",
+          url: "https://github.com/BornToBeRoot",
+        },
+        license:
+          "https://github.com/BornToBeRoot/NETworkManager/blob/main/LICENSE",
+      }),
+    },
+  ],
 
   presets: [
     [
@@ -43,6 +81,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarCount: "ALL",
           editUrl:
             "https://github.com/bornToBeRoot/NETworkManager/tree/main/Website/",
         },
@@ -56,8 +95,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/social-card.png",
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "NETworkManager, network manager, network tools, IP scanner, port scanner, ping monitor, traceroute, DNS lookup, remote desktop, SSH, PuTTY, PowerShell, VNC, WiFi analyzer, subnet calculator, SNMP, network troubleshooting, Windows network tool, open source",
+        },
+        { name: "author", content: "BornToBeRoot" },
+      ],
       navbar: {
         title: "NETworkManager",
         logo: {
@@ -145,6 +191,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ["csharp", "json", "powershell"],
       },
     }),
 
@@ -157,9 +204,15 @@ const config = {
           {
             // Redirect latest changelog to the newest version
             from: ["/docs/changelog/latest"],
-            to: "/docs/changelog/2025-10-18-0",
+            to: "/docs/changelog/2026-2-22-0",
           },
           // Redirect pre-versions to the corresponding new versions
+          {
+            from: [              
+              "/docs/changelog/2026-3-4-0",
+            ],
+            to: "/docs/changelog/next-release",
+          },
           {
             from: [
               "/docs/changelog/2025-11-1-0",
@@ -169,13 +222,12 @@ const config = {
               "/docs/changelog/2025-12-28-0",
               "/docs/changelog/2026-2-19-0",
             ],
-            to: "/docs/changelog/next-release",
+            to: "/docs/changelog/2026-2-22-0",
           },
           {
             from: [
               "/docs/changelog/2025-6-13-0",
               "/docs/changelog/2025-7-9-0",
-              "/docs/changelog/2025-6-13-0",
             ],
             to: "/docs/changelog/2025-8-10-0",
           },

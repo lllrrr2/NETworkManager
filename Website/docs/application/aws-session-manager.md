@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+description: "AWS Session Manager integration for NETworkManager (removed). Connect to EC2 instances using PowerShell with the AWS SSM plugin instead."
+keywords: [NETworkManager, AWS Session Manager, EC2, SSM plugin, remote session, AWS]
 ---
 
 # AWS Session Manager
@@ -16,7 +18,7 @@ You can still use AWS Session Manager within NETworkManager with the [PowerShell
 
 With **AWS** (Systems Manager) **Session Manager**, you can connect to and manage an EC2 instance without opening inbound ports, running a bastion host, or managing SSH keys. The integration of AWS Session Manager with NETworkManger supports tabs and profiles for hosts. The connection can be established via a profile (double-click, Enter key or right-click `Connect`) or directly via the [connection](#connect) dialog. You can also synchronize your EC2 instances from AWS. To connect to the instances a PowerShell console is used with the AWS CLI and the AWS Session Manager plugin. The connection to the instances is established via the following command:
 
-```PowerShell
+```powershell
 aws ssm start-session --target <instance-id>
 ```
 

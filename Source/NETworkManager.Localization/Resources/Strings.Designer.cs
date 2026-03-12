@@ -1465,17 +1465,6 @@ namespace NETworkManager.Localization.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die The location is changed and the application is restarted afterwards.
-        ///
-        ///You can copy the “settings.json” file from &quot;{0}&quot; to &quot;{1}&quot; to migrate your previous settings, if necessary. The application must be closed for this to prevent the settings from being overwritten. ähnelt.
-        /// </summary>
-        public static string ChangeLocationSettingsMessage {
-            get {
-                return ResourceManager.GetString("ChangeLocationSettingsMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Changelog ähnelt.
         /// </summary>
         public static string Changelog {
@@ -1499,6 +1488,28 @@ namespace NETworkManager.Localization.Resources {
         public static string ChangeMasterPasswordDots {
             get {
                 return ResourceManager.GetString("ChangeMasterPasswordDots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The profiles location is changed and the application is restarted afterwards.
+        ///
+        ///You can copy your profile files from “{0}” to “{1}” to migrate your existing profiles, if necessary. The application must be closed for this to prevent the profiles from being overwritten. ähnelt.
+        /// </summary>
+        public static string ChangeProfilesLocationMessage {
+            get {
+                return ResourceManager.GetString("ChangeProfilesLocationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The settings location is changed and the application is restarted afterwards.
+        ///
+        ///You can copy the “settings.json” file from &quot;{0}&quot; to &quot;{1}&quot; to migrate your previous settings, if necessary. The application must be closed for this to prevent the settings from being overwritten. ähnelt.
+        /// </summary>
+        public static string ChangeSettingsLocationMessage {
+            get {
+                return ResourceManager.GetString("ChangeSettingsLocationMessage", resourceCulture);
             }
         }
         
@@ -6110,6 +6121,15 @@ namespace NETworkManager.Localization.Resources {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Network connection ähnelt.
+        /// </summary>
+        public static string NetworkConnection {
+            get {
+                return ResourceManager.GetString("NetworkConnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Network connections.... ähnelt.
         /// </summary>
         public static string NetworkConnectionsDots {
@@ -6169,6 +6189,15 @@ namespace NETworkManager.Localization.Resources {
         public static string Networks {
             get {
                 return ResourceManager.GetString("Networks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Network Status ähnelt.
+        /// </summary>
+        public static string NetworkStatus {
+            get {
+                return ResourceManager.GetString("NetworkStatus", resourceCulture);
             }
         }
         
@@ -8892,13 +8921,13 @@ namespace NETworkManager.Localization.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die The default path is restored and the application is restarted afterwards.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The default profiles location is restored and the application is restarted afterwards.
         ///
-        ///You can copy the “settings.json” file from &quot;{0}&quot; to &quot;{1}&quot; to migrate your previous settings, if necessary. The application must be closed for this to prevent the settings from being overwritten. ähnelt.
+        ///You can copy your profile files from “{0}” to “{1}” to migrate your existing profiles, if necessary. The application must be closed for this to prevent the profiles from being overwritten. ähnelt.
         /// </summary>
-        public static string RestoreDefaultLocationSettingsMessage {
+        public static string RestoreDefaultProfilesLocationMessage {
             get {
-                return ResourceManager.GetString("RestoreDefaultLocationSettingsMessage", resourceCulture);
+                return ResourceManager.GetString("RestoreDefaultProfilesLocationMessage", resourceCulture);
             }
         }
         
@@ -8908,6 +8937,17 @@ namespace NETworkManager.Localization.Resources {
         public static string RestoreDefaults {
             get {
                 return ResourceManager.GetString("RestoreDefaults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The default settings location is restored and the application is restarted afterwards.
+        ///
+        ///You can copy the “settings.json” file from &quot;{0}&quot; to &quot;{1}&quot; to migrate your previous settings, if necessary. The application must be closed for this to prevent the settings from being overwritten. ähnelt.
+        /// </summary>
+        public static string RestoreDefaultSettingsLocationMessage {
+            get {
+                return ResourceManager.GetString("RestoreDefaultSettingsLocationMessage", resourceCulture);
             }
         }
         
@@ -9609,7 +9649,7 @@ namespace NETworkManager.Localization.Resources {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die A powerful tool for managing networks and troubleshoot network problems! ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die A powerful open-source tool for managing networks and troubleshooting network problems! ähnelt.
         /// </summary>
         public static string Slogan {
             get {
@@ -10626,6 +10666,15 @@ namespace NETworkManager.Localization.Resources {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Reload ähnelt.
+        /// </summary>
+        public static string ToolTip_Reload {
+            get {
+                return ResourceManager.GetString("ToolTip_Reload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Report an issue or create a feature request. ähnelt.
         /// </summary>
         public static string ToolTip_ReportIssueOrCreateFeatureRequest {
@@ -10649,6 +10698,15 @@ namespace NETworkManager.Localization.Resources {
         public static string ToolTip_RunCommandWithHotKey {
             get {
                 return ResourceManager.GetString("ToolTip_RunCommandWithHotKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Show ähnelt.
+        /// </summary>
+        public static string ToolTip_Show {
+            get {
+                return ResourceManager.GetString("ToolTip_Show", resourceCulture);
             }
         }
         
