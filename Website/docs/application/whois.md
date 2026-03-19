@@ -1,5 +1,7 @@
 ---
 sidebar_position: 19
+description: "Look up domain registration and ownership details from TLD Whois servers using NETworkManager. Retrieves registrar, creation date, and nameservers."
+keywords: [NETworkManager, Whois, domain lookup, domain registration, Whois query, domain information, domain owner]
 ---
 
 # Whois

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+description: "Configure where NETworkManager stores profile files. Manage profile file locations for setup, portable, and custom deployment scenarios."
+keywords: [NETworkManager, profile settings, profile file location, profile storage, profile management]
 ---
 
 # Profiles
@@ -16,6 +18,30 @@ Folder where the application profiles are stored.
 | -------------- | ------------------------------------------------- |
 | Setup / Archiv | `%UserProfile%\Documents\NETworkManager\Profiles` |
 | Portable       | `<APP_FOLDER>\Profiles`                           |
+
+<details className="alert alert--info">
+<summary>System-Wide Policy</summary>
+
+This setting can be controlled by administrators using a system-wide policy. See [System-Wide Policies](../system-wide-policies.md) for more information.
+
+**Policy Property:** `Profiles_FolderLocation`
+
+**Values:**
+
+- Absolute path (e.g., `C:\\Path\\To\\Profiles`)
+- Path with environment variables (e.g., `%UserProfile%\\NETworkManager\\Profiles`)
+- UNC path (e.g., `\\\\server\\share$\\NETworkManager\\Profiles`)
+- Omit the property to allow the default location logic to apply (portable vs. non-portable)
+
+**Example:**
+
+```json
+{
+  "Profiles_FolderLocation": "%UserProfile%\\NETworkManager\\Profiles"
+}
+```
+
+</details>
 
 :::note
 

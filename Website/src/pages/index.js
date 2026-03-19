@@ -47,8 +47,8 @@ function HomepageHeader() {
               <b>NETworkManager</b>
             </p>
             <p className={styles.heroProjectTagline}>
-              A powerful tool for <b>managing</b> networks and{" "}
-              <b>troubleshoot</b> network problems!
+              A powerful open-source tool for <b>managing</b> networks and{" "}
+              <b>troubleshooting</b> network problems!
             </p>
           </span>
         </Heading>
@@ -218,8 +218,8 @@ export default function Home() {
 
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description={`${siteConfig.title} - ${siteConfig.tagline}`}
+      title="A powerful open-source tool for managing networks and troubleshooting network problems!"
+      description="NETworkManager - A powerful open-source tool for managing networks and troubleshooting network problems. 25+ built-in network tools for daily use."
     >
       <HomepageHeader />
       <main>

@@ -1,8 +1,10 @@
 ---
 slug: system-wide-policies-for-enterprise-deployments
 title: System-Wide Policies for Enterprise Deployments
+description: "NETworkManager now supports system-wide policies for centralized control over settings across all users — ideal for enterprise deployments."
 authors: [borntoberoot]
 tags: [policies, enterprise, settings, new feature]
+keywords: [NETworkManager, system-wide policies, enterprise, deployment, Intune, SCCM, Group Policy, configuration management]
 ---
 
 NETworkManager now supports system-wide policies, giving administrators centralized control over application settings across all users on a machine. This feature is available since the [pre-release version 2026.02.19.0](https://github.com/BornToBeRoot/NETworkManager/releases) and can now be tested.
@@ -38,19 +40,27 @@ Property names follow the pattern `Section_SettingName`. You can find the availa
 
 ### Example Policy
 
-For example, the [`Update_CheckForUpdatesAtStartup`](https://borntoberoot.net/NETworkManager/docs/settings/update) policy controls whether the application checks for new program versions on GitHub when the application is launched.
+For example, the [`Update_CheckForUpdatesAtStartup`](https://borntoberoot.net/NETworkManager/docs/settings/update) policy controls whether the application checks for new program versions on GitHub when the application is launched. The [`Profiles_FolderLocation`](https://borntoberoot.net/NETworkManager/docs/settings/profiles) and [`Settings_FolderLocation`](https://borntoberoot.net/NETworkManager/docs/settings/settings) policies allow administrators to redirect profile and settings storage to a centralized location, such as a network share or a custom local path.
 
 **Values:**
 
-- `true` — Force enable automatic update checks at startup for all users
-- `false` — Force disable automatic update checks at startup for all users
-- Omit the property — Allow users to control this setting themselves
+- `Update_CheckForUpdatesAtStartup`:
+  - `true` — Force enable automatic update checks at startup for all users
+  - `false` — Force disable automatic update checks at startup for all users
+  - Omit the property — Allow users to control this setting themselves
+- `Profiles_FolderLocation` / `Settings_FolderLocation`:
+  - Absolute path (e.g., `C:\\Path\\To\\Profiles`)
+  - Path with environment variables (e.g., `%UserProfile%\\NETworkManager\\Settings`)
+  - UNC path (e.g., `\\\\Server\\Shared\\NETworkManager\\Profiles`)
+  - Omit the property — Allow the default location logic to apply
 
 **Example `config.json`:**
 
 ```json
 {
-  "Update_CheckForUpdatesAtStartup": false
+  "Update_CheckForUpdatesAtStartup": false,
+  "Profiles_FolderLocation": "\\\\Server\\Shared\\NETworkManager\\Profiles",
+  "Settings_FolderLocation": "%UserProfile%\\NETworkManager\\Settings"
 }
 ```
 

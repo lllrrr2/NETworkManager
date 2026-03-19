@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+description: "Configure where NETworkManager stores its settings files. Manage settings file location and portable vs. installed deployment paths."
+keywords: [NETworkManager, settings location, settings file, configuration storage, settings management]
 ---
 
 # Settings
@@ -22,7 +24,7 @@ Folder where the application settings are stored.
 
 This setting can be controlled by administrators using a system-wide policy. See [System-Wide Policies](../system-wide-policies.md) for more information.
 
-**Policy Property:** `SettingsFolderLocation`
+**Policy Property:** `Settings_FolderLocation`
 
 **Values:**
 
@@ -35,7 +37,7 @@ This setting can be controlled by administrators using a system-wide policy. See
 
 ```json
 {
-  "SettingsFolderLocation": "%UserProfile%\\NETworkManager\\Settings"
+  "Settings_FolderLocation": "%UserProfile%\\NETworkManager\\Settings"
 }
 ```
 
